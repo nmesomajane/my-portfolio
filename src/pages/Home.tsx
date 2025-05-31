@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ProfilePic from "../assets/nmeso2.png";
- // Assuming you have a Pics object with image paths  
+import { FaChevronDown } from "react-icons/fa";
+// Assuming you have a Pics object with image paths
 
 const Home = () => {
   const [showLine2, setShowLine2] = useState(false);
@@ -20,66 +21,51 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-black h-screen text-white px-8 md:px-16">
+    <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end  h-screen text-white fixed ">
       {/* Left Side - Typewriter Text */}
-      <div className="md:w-1/2 space-y-6 text-left">
-        <h1 className="text-4xl md:text-5xl font-bold ">
+      <div className="md:w-1/2   md:space-y-6 text-center md:text-left flex  flex-col  bottom-5">
+        <h1 className="text-4xl gap-2 py-4 md:gap-4 md:text-5xl  ">
           <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  '<span class="text-indigo-400 text-2xl md:text-3xl font-mono tracking-widest">HI THERE !</span>'
+                )
+                .pauseFor(1000)
+                .typeString(
+                  '<br><span class="text-white text-4xl md:text-5xl font-extrabold font-sans">I\'M NMESOMA NNOPU</span>'
+                )
+                .pauseFor(1000)
+                .typeString(
+                  '<br><span class="text-indigo-300 text-xl md:text-2xl font-semibold font-mono">A FRONT-END WEB DEVELOPER</span>'
+                )
+                .start();
+            }}
             options={{
-              strings: ["Hi there!"],
-              autoStart: true,
               delay: 75,
-              loop: true, // Prevent looping for line 1
-              cursor: ''// remove the cursor
+              cursor: "|",
             }}
           />
-          <br />
-          <span className="font-extrabold">
-            {showLine2 && (
-              <Typewriter
-                options={{
-                  strings: ["I am Nmesoma"],
-                  autoStart: true,
-                  delay: 85,
-                  loop: true, // Prevent looping for line 2
-                  cursor: '' // remove the cursor
-                }}
-              />
-            )}
-          </span>
-          <br />
-          {showLine3 && (
-            <Typewriter
-              options={{
-                strings: ["I am a Frontend Web Developer"],
-                autoStart: true,
-                delay: 95,
-                loop: true, // Prevent looping for line 3
-                cursor: '' // remove the cursor
-              }}
-            />
-          )}
         </h1>
 
-
         <motion.div
-          className="mt-6 "
+          className="absolute md:bottom-10 bottom-4 text-center w-full"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
         >
           <Link
             to="/overview"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-lg shadow-lg" 
+            className="text-white  hover:underline text-xl flex items-center justify-center gap-2 "
           >
-            
-            Click to Know More
+            Click to Know More <br />{" "}
+            <FaChevronDown className="mt-1  justify-center items-center " />
           </Link>
         </motion.div>
       </div>
 
       {/* Right Side - Profile Image */}
       <motion.div
-        className="md:w-1/2 flex justify-end relative"
+        className="md:w-1/2 flex gap-y-0 justify-end "
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 3, ease: "easeOut" }}
@@ -87,7 +73,7 @@ const Home = () => {
         <img
           src={ProfilePic}
           alt="Profile"
-          className="w-[800px] md:w-[60%] h-auto object-cover rounded-lg shadow-lg mix-blend-lighten"
+          className="w-[800px] md:w-[50%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>

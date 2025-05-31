@@ -1,4 +1,4 @@
-import { RouteObject, useRoutes } from "react-router-dom";
+import { RouteObject, useRoutes,Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Overview from "../pages/Overview";
 import Info from "../pages/Info";
@@ -9,7 +9,9 @@ export function AppRoutes() {
   const routes: RouteObject[] = [
     {
       path: "/",  
-      element: <Home />,  // ✅ Home page WITHOUT Header & Footer
+      // Home page WITHOUT Header & Footer
+      element: <Home />,  
+      index: true,
     },
     {
       path: "/",  
@@ -20,10 +22,20 @@ export function AppRoutes() {
         </>
       ),
       children: [
-        { path: "overview", element: <Overview /> },
-        { path: "info", element: <Info /> },
+        { 
+          path: "overview", 
+          element: <Overview /> 
+        },
+        { 
+          path: "info", 
+          element: <Info /> 
+        },
       ],
     },
+    {
+      path: "/home",
+      element: <Navigate to="/" replace />
+    }
   ];
 
   return useRoutes(routes);
