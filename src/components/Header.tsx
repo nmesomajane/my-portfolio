@@ -1,50 +1,83 @@
-import React from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom';
-import {FaTv, FaFilm, FaUser, FaSearch } from 'react-icons/fa';
-
+import React, { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const navigation = [
-  {
-    label: 'Home',
-    href: '/home',  
-   
-  },
-  {
-    label: 'Overview',
-    href: '/overview',
-   
-  },
-  {
-    label: 'Info',
-    href: '/info',
-  
-  },
+  { label: "Home", href: "/home" },
+  { label: "Overview", href: "/overview" },
+  { label: "Info", href: "/info" },
 ];
-const Header = () => {
-const navigate = useNavigate();
 
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='bg-black w-full'>
-      {/* navbar */}
-      <div className=' sm:flex sm:p-3 sm:text-lg text-white w-full'>
-        <nav className="  w-full flex justify-center gap-4 bg-black p-4 text-4xl">
-          {navigation.map((nav, index) => (
-            <NavLink
-              key={index}
-              to={nav.href}
-              className="text-white text-xl hover:text-gray transition-colors px-2"
-            >
-              {nav.label}
-            </NavLink>
-          
-          ))}
+    <div className="bg-black w-full">
+      <div className="flex justify-between items-center p-1 text-lg text-white w-full">
+        <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl">
+          {/* Desktop Nav */}
+          <div className="hidden md:flex">
+            {navigation.map((nav, index) => (
+              <NavLink
+                key={index}
+                to={nav.href}
+                className={({ isActive }) =>
+                  `text-white text-xl px-2 transition-colors 
+                  hover:underline underline-offset-8
+                  ${isActive ? "underline underline-offset-8 text-indigo-400 font-bold" : ""}`
+                }
+              >
+                {nav.label}
+              </NavLink>
+            ))}
+          </div>
+          {/* Download CV Button (always visible on desktop, below on mobile) */}
+          <a
+            href="/resume.pdf"
+            download
+            className="hidden md:inline-block ml-4 bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded"
+          >
+            Download CV
+          </a>
+          {/* Hamburger Icon */}
+          <button
+            className="md:hidden text-white text-3xl focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </nav>
-
-        </div>
-      
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-black z-50 flex flex-col items-center py-6 space-y-4 md:hidden shadow-lg">
+            {navigation.map((nav, index) => (
+              <NavLink
+                key={index}
+                to={nav.href}
+                className={({ isActive }) =>
+                  `text-white text-xl px-2 transition-colors 
+                  hover:underline underline-offset-8
+                  ${isActive ? "underline underline-offset-8 text-indigo-400 font-bold" : ""}`
+                }
+                onClick={() => setMenuOpen(false)}
+              >
+                {nav.label}
+              </NavLink>
+            ))}
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded"
+              onClick={() => setMenuOpen(false)}
+            >
+              Download CV
+            </a>
+          </div>
+        )}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
