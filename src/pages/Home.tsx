@@ -9,7 +9,7 @@ import { FaChevronDown } from "react-icons/fa";
 const Home = () => {
  
   return (
-    <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end scroll  h-screen text-white md:fixed  ">
+    <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end   h-screen text-white fixed  ">
       {/* Left Side - Typewriter Text */}
       <div className="md:w-1/2   md:space-y-6 text-center md:text-left flex  flex-col  bottom-5">
         <h1 className="text-4xl gap-2 py-4 md:gap-4 md:text-5xl  ">
@@ -53,7 +53,7 @@ const Home = () => {
 
       {/* Right Side - Profile Image */}
       <motion.div
-        className="md:w-1/2 flex gap-y-0 justify-end pt-0"
+        className="md:w-1/2 flex gap-y-0 justify-end  rounded-full "
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 3, ease: "easeOut" }}
