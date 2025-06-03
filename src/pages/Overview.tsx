@@ -1,10 +1,9 @@
-
 import ProfilePic from "../assets/nmeso3.jpg";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 const Overview = () => {
   return (
-    <div className="w-full  px-4 py-1 font-sans bg-gray-50">
+    <div className="w-full px-4 md:px-8 py-1 font-sans bg-gray-50">
       <div className="flex flex-col-reverse md:flex-row justify-end m-4 md:m-12 gap-x-4 md:gap-x-12  ">
         <motion.div
           className="md:w-1/2  space-y-6 md:space-y-8 text-left flex flex-col bottom-5"
@@ -12,7 +11,7 @@ const Overview = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-3xl md:text-4xl font-sans font-extrabold text-indigo-800 mb-4   mt-2 ">
+          <h1 className="text-3xl md:text-4xl font-sans font-extrabold text-indigo-800 mb-4 pt-12  mt-2 ">
             About Me
           </h1>
           <p className="text-base md:text-lg text-gray-700  mt-2">
@@ -29,8 +28,9 @@ const Overview = () => {
             tools and technologies to stay relevant in the tech space. Whether
             it’s solving problems with code or bringing a UI design to reality,
             I’m always up for the challenge. <br />
-            
-            <span className="font-semibold text-indigo-700">Let’s build something amazing, shall we?</span>
+            <span className="font-semibold text-indigo-700">
+              Let’s build something amazing, shall we?
+            </span>
           </p>
           <div className="flex  space-x-4 ">
             <a
@@ -60,7 +60,7 @@ const Overview = () => {
           </div>
         </motion.div>
 
-        <div className="relative w-[250px] h-[350px] rounded-full mx-auto md:w-1/2 flex gap-y-1 pt-15 justify-end ">
+        <div className="relative w-[250px] h-[350px] rounded-full mx-auto md:w-[350px] md:h-[400px] flex gap-y-1 pt-15 md:pt-20 center  md:justify-end ">
           <div className=" inset-0 rounded-full   ">
             <img
               src={ProfilePic}
@@ -71,9 +71,11 @@ const Overview = () => {
         </div>
       </div>
 
-      <div className="px-4 py-10">
+      <div className="px-4 md:px-8 py-10">
         <div className="mb-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-indigo-800">Testimonials</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-indigo-800">
+            Testimonials
+          </h1>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
@@ -90,10 +92,11 @@ const Overview = () => {
                 alt="Profile"
                 className="w-14 h-14 rounded-full border-4 border-white hover:border-purple-600 object-cover transition duration-300"
               />
-              <p className="text-base font-bold text-black">Bright Lazarus <br />
-              <span className="text-sm text-gray-600 font-medium">
-                Fullstack Developer
-              </span>
+              <p className="text-base font-bold text-black">
+                Bright Lazarus <br />
+                <span className="text-sm text-gray-600 font-medium">
+                  Fullstack Developer
+                </span>
               </p>
             </div>
           </div>
@@ -111,10 +114,11 @@ const Overview = () => {
                 alt="Profile"
                 className="w-14 h-14 rounded-full border-4 border-white hover:border-indigo-400 object-cover transition duration-300"
               />
-              <p className="text-base font-bold text-black">Bright Lazarus <br />
-              <span className="text-sm text-gray-600 font-medium">
-                Fullstack Developer
-              </span>
+              <p className="text-base font-bold text-black">
+                Bright Lazarus <br />
+                <span className="text-sm text-gray-600 font-medium">
+                  Fullstack Developer
+                </span>
               </p>
             </div>
           </div>

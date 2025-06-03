@@ -1,5 +1,5 @@
-import  { useState } from "react";
-import { NavLink  } from "react-router-dom";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -7,6 +7,7 @@ const navigation = [
   { label: "Home", href: "/home" },
   { label: "Overview", href: "/overview" },
   { label: "Info", href: "/info" },
+  { label: "Contact Me", href: "#footer" },
 ];
 
 const Header = () => {
@@ -18,23 +19,33 @@ const Header = () => {
         <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl ">
           {/* Desktop Nav */}
           <div className="hidden md:flex">
-            {navigation.map((nav, index) => (
-              <NavLink
-                key={index}
-                to={nav.href}
-                className={({ isActive }) =>
-                  `text-white text-xl px-2 transition-colors 
+            {navigation.map((nav, index) =>
+              nav.href.startsWith("#") ? (
+                <a
+                  key={index}
+                  href={nav.href}
+                  className="text-white text-xl px-2 transition-colors hover:underline underline-offset-8"
+                >
+                  {nav.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={index}
+                  to={nav.href}
+                  className={({ isActive }) =>
+                    `text-white text-xl px-2 transition-colors 
                   hover:underline underline-offset-8
                   ${
                     isActive
                       ? "underline underline-offset-8 text-indigo-400 font-bold"
                       : ""
                   }`
-                }
-              >
-                {nav.label}
-              </NavLink>
-            ))}
+                  }
+                >
+                  {nav.label}
+                </NavLink>
+              )
+            )}
           </div>
           {/* Download CV Button (always visible on desktop, below on mobile) */}
           <a
@@ -62,24 +73,34 @@ const Header = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            {navigation.map((nav, index) => (
-              <NavLink
-                key={index}
-                to={nav.href}
-                className={({ isActive }) =>
-                  `text-white text-xl px-2 transition-colors 
+            {navigation.map((nav, index) =>
+              nav.href.startsWith("#") ? (
+                <a
+                  key={index}
+                  href={nav.href}
+                  className="text-white text-xl px-2 transition-colors hover:underline underline-offset-8"
+                >
+                  {nav.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={index}
+                  to={nav.href}
+                  className={({ isActive }) =>
+                    `text-white text-xl px-2 transition-colors 
                   hover:underline underline-offset-8
                   ${
                     isActive
                       ? "underline underline-offset-8 text-indigo-400 font-bold"
                       : ""
                   }`
-                }
-                onClick={() => setMenuOpen(false)}
-              >
-                {nav.label}
-              </NavLink>
-            ))}
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {nav.label}
+                </NavLink>
+              )
+            )}
             <a
               href="/resume.pdf"
               download

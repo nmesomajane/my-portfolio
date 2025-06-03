@@ -61,7 +61,7 @@ const Home = () => {
         <img
           src={ProfilePic}
           alt="Profile"
-          className="w-[350px]  md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
+          className="w-[300px]  md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>
