@@ -68,7 +68,7 @@ const Header = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <motion.div
-            className="absolute top-16 left-0 w-full bg-blend-color-burn z-50 flex flex-col items-center py-6 space-y-4 md:hidden shadow-lg "
+            className="absolute top-16 left-0 w-full bg-black z-50 flex flex-col items-center py-6 space-y-4 md:hidden shadow-lg "
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
