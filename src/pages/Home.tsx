@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
@@ -7,18 +7,18 @@ import { FaChevronDown } from "react-icons/fa";
 // Assuming you have a Pics object with image paths
 
 const Home = () => {
-  const [showLine2, setShowLine2] = useState(false);
-  const [showLine3, setShowLine3] = useState(false);
-  const [showProfile, setShowProfile] = useState(false);
+  // const [showLine2, setShowLine2] = useState(false);
+  // const [showLine3, setShowLine3] = useState(false);
+  // const [showProfile, setShowProfile] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => setShowLine2(true), 1500); // Show Line 2 after 1.5s
-    setTimeout(() => setShowLine3(true), 3000); // Show Line 3 after 3s
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setShowLine2(true), 1500); // Show Line 2 after 1.5s
+  //   setTimeout(() => setShowLine3(true), 3000); // Show Line 3 after 3s
+  // }, []);
 
-  useEffect(() => {
-    setTimeout(() => setShowProfile(true), 500); // Delay profile slide-in
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setShowProfile(true), 500); // Delay profile slide-in
+  // }, []);
 
   return (
     <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end  h-screen text-white fixed ">
