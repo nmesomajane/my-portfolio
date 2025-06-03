@@ -4,24 +4,12 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ProfilePic from "../assets/nmeso2.png";
 import { FaChevronDown } from "react-icons/fa";
-// Assuming you have a Pics object with image paths
+
 
 const Home = () => {
-  // const [showLine2, setShowLine2] = useState(false);
-  // const [showLine3, setShowLine3] = useState(false);
-  // const [showProfile, setShowProfile] = useState(false);
-
-  // useEffect(() => {
-  //   setTimeout(() => setShowLine2(true), 1500); // Show Line 2 after 1.5s
-  //   setTimeout(() => setShowLine3(true), 3000); // Show Line 3 after 3s
-  // }, []);
-
-  // useEffect(() => {
-  //   setTimeout(() => setShowProfile(true), 500); // Delay profile slide-in
-  // }, []);
-
+ 
   return (
-    <div className="  bg-black w-full   px-3 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end  h-screen text-white fixed  ">
+    <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end scroll  h-screen text-white md:fixed  ">
       {/* Left Side - Typewriter Text */}
       <div className="md:w-1/2   md:space-y-6 text-center md:text-left flex  flex-col  bottom-5">
         <h1 className="text-4xl gap-2 py-4 md:gap-4 md:text-5xl  ">
@@ -49,7 +37,7 @@ const Home = () => {
         </h1>
 
         <motion.div
-          className="absolute md:bottom-10 bottom-10 text-center w-full"
+          className="absolute md:bottom-10 bottom-8 text-center w-full"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -65,7 +53,7 @@ const Home = () => {
 
       {/* Right Side - Profile Image */}
       <motion.div
-        className="md:w-1/2 flex gap-y-0 justify-end "
+        className="md:w-1/2 flex gap-y-0 justify-end pt-0"
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 3, ease: "easeOut" }}
@@ -73,7 +61,7 @@ const Home = () => {
         <img
           src={ProfilePic}
           alt="Profile"
-          className="w-[600px] md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
+          className="w-[400px] md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>
