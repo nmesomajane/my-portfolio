@@ -40,7 +40,7 @@ const Overview = () => {
               <FaInstagram size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/nmesomannopu"
+              href="https://www.linkedin.com/in/nmesoma-nnopu-39836529a "
               className="hover:text-gray-400 transition"
             >
               <FaLinkedin size={24} />
@@ -52,7 +52,7 @@ const Overview = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://github.com/nmesomajane"
+              href="https://x.com/NmesomaNnopu?t=G5ZmooDkX8xYMxnPnGYPSQ&s=09"
               className="hover:text-gray-400 transition"
             >
               <FaTwitter size={24} />
@@ -60,7 +60,7 @@ const Overview = () => {
           </div>
         </motion.div>
 
-        <div className="relative w-[250px] h-[350px] rounded-full mx-auto md:w-1/2 flex gap-y-0 justify-end ">
+        <div className="relative w-[250px] h-[350px] rounded-full mx-auto md:w-1/2 flex gap-y-1 pt-15 justify-end ">
           <div className=" inset-0 rounded-full   ">
             <img
               src={ProfilePic}

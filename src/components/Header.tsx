@@ -13,7 +13,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black w-full ">
+    <div className="bg-black w-full fixed top-0 left-0 z-50 shadow">
       <div className="flex justify-between items-center p-1 text-lg text-white w-full  ">
         <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl ">
           {/* Desktop Nav */}

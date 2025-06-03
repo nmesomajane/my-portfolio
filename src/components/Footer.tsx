@@ -20,8 +20,8 @@ const Footer = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-4 mt-4">
-          <a href="https://instagram.com/nme_somaa" className="hover:text-gray-400 transition">🐦 Instagram</a>
-          <a href="https://linkedin.com/in/nmesomannopu" className="hover:text-gray-400 transition">💼 LinkedIn</a>
+          <a href="https://x.com/NmesomaNnopu?t=G5ZmooDkX8xYMxnPnGYPSQ&s=09" className="hover:text-gray-400 transition">🐦 Twitter</a>
+          <a href="https://www.linkedin.com/in/nmesoma-nnopu-39836529a  " className="hover:text-gray-400 transition">💼 LinkedIn</a>
           <a href="https://github.com/nmesomajane" className="hover:text-gray-400 transition">👨‍💻 GitHub</a>
         </div>
 
