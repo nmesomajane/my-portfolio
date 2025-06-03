@@ -21,7 +21,7 @@ const Home = () => {
   // }, []);
 
   return (
-    <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end  h-screen text-white fixed ">
+    <div className="  bg-black w-full   px-3 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end  h-screen text-white fixed  ">
       {/* Left Side - Typewriter Text */}
       <div className="md:w-1/2   md:space-y-6 text-center md:text-left flex  flex-col  bottom-5">
         <h1 className="text-4xl gap-2 py-4 md:gap-4 md:text-5xl  ">
@@ -49,7 +49,7 @@ const Home = () => {
         </h1>
 
         <motion.div
-          className="absolute md:bottom-10 bottom-4 text-center w-full"
+          className="absolute md:bottom-10 bottom-10 text-center w-full"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -73,7 +73,7 @@ const Home = () => {
         <img
           src={ProfilePic}
           alt="Profile"
-          className="w-[800px] md:w-[50%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
+          className="w-[600px] md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>
