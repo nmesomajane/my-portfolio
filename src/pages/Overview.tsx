@@ -1,4 +1,4 @@
-import React from "react";
+
 import ProfilePic from "../assets/nmeso3.jpg";
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
