@@ -37,7 +37,7 @@ const Home = () => {
         </h1>
 
         <motion.div
-          className="absolute md:bottom-10 bottom-16 text-center w-full"
+          className="absolute md:bottom-10 bottom-20 text-center w-full"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
         >
