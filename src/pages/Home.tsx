@@ -37,7 +37,7 @@ const Home = () => {
         </h1>
 
         <motion.div
-          className="absolute md:bottom-10 bottom-12 text-center w-full"
+          className="absolute md:bottom-10 bottom-16 text-center w-full"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -61,7 +61,7 @@ const Home = () => {
         <img
           src={ProfilePic}
           alt="Profile"
-          className="w-[300px]  md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
+          className="w-[250px]  md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>

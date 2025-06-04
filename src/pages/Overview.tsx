@@ -78,7 +78,7 @@ const Overview = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex mt-8 mb-10  flex-col md:flex-row gap-6">
           {/* Testimonial 1 */}
           <div className="bg-white border-4 border-white shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
             <p className="text-gray-700 text-base md:text-lg mb-4 leading-relaxed">
@@ -90,7 +90,7 @@ const Overview = () => {
               <img
                 src={ProfilePic}
                 alt="Profile"
-                className="w-14 h-14 rounded-full border-4 border-white hover:border-purple-600 object-cover transition duration-300"
+                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
               />
               <p className="text-base font-bold text-black">
                 Bright Lazarus <br />
@@ -112,7 +112,7 @@ const Overview = () => {
               <img
                 src={ProfilePic}
                 alt="Profile"
-                className="w-14 h-14 rounded-full border-4 border-white hover:border-indigo-400 object-cover transition duration-300"
+                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
               />
               <p className="text-base font-bold text-black">
                 Bright Lazarus <br />
