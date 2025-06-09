@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 const Info = () => {
   return (
-    <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 px-6 py-12 font-sans">
+    <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 md:mt-12
+    px-6 py-12 font-sans">
       <motion.div
         className="w-full space-y-12"
         initial={{ x: -100, opacity: 0 }}
@@ -106,7 +107,7 @@ const Info = () => {
               >
                 chat application
               </a>{" "}
-              using React.js, Firebase, and Tailwind CSS.
+              using React.js, Firebase, and Tailwind CSS.Enables seamless messaging with features like user authentication and search functionality.
             </li>
             <li>
               Developed a user-friendly{" "}

@@ -18,13 +18,13 @@ const Header = () => {
       <div className="flex justify-between items-center p-1 text-lg text-white w-full  ">
         <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl ">
           {/* Desktop Nav */}
-          <div className="hidden md:flex">
+          <div className="hidden md:flex md:gap-[40px]">
             {navigation.map((nav, index) =>
               nav.href.startsWith("#") ? (
                 <a
                   key={index}
                   href={nav.href}
-                  className="text-white text-xl px-2 transition-colors hover:underline underline-offset-8"
+                  className="text-white text-xl px-2 transition-colors hover:underline underline-offset-8 "
                 >
                   {nav.label}
                 </a>
@@ -51,7 +51,7 @@ const Header = () => {
           <a
             href="/resume.pdf"
             download
-            className="hidden md:inline-block ml-4 bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded"
+            className="hidden md:inline-block ml-4 bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded md:mr-5"
           >
             Download CV
           </a>
