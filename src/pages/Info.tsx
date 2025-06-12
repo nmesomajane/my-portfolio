@@ -37,7 +37,7 @@ const Info = () => {
         {/* Experience */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
-            Experience
+          Professional  Experience
           </h2>
           <p className="text-lg font-semibold text-white">
             Productsio, Rivers State, Nigeria
@@ -94,7 +94,7 @@ const Info = () => {
         {/* Demo Projects */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
-            Demo Projects
+             Projects
           </h2>
           <ul className="list-disc list-inside text-lg md:text-xl text-gray-300 space-y-2 ml-2">
             <li>

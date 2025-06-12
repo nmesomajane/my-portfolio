@@ -1,4 +1,5 @@
 import ProfilePic from "../assets/nmeso3.jpg";
+import pics from "../assets/pm.jpg"
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 const Overview = () => {
@@ -82,20 +83,18 @@ const Overview = () => {
           {/* Testimonial 1 */}
           <div className="bg-white border-4 border-white shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
             <p className="text-gray-700 text-base md:text-lg mb-4 leading-relaxed">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus deleniti numquam repellendus facilis cupiditate
-              laudantium dolorem iusto eos molestiae!
+              Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills. Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. Beyond her talent, it’s her humility, kindness, and collaborative spirit that truly set her apart. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.
             </p>
             <div className="flex items-center gap-3 mt-4">
               <img
-                src={ProfilePic}
+                src={pics}
                 alt="Profile"
                 className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
               />
               <p className="text-base font-bold text-black">
-                Bright Lazarus <br />
+                Jennifer Oro-Oghene <br />
                 <span className="text-sm text-gray-600 font-medium">
-                  Fullstack Developer
+                  Project Manager
                 </span>
               </p>
             </div>
