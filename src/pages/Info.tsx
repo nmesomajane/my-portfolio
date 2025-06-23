@@ -1,7 +1,17 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+
 
 const Info = () => {
   return (
+    <>
+    <Helmet>
+        <title>Nmesoma Nnopu | Frontend Developer</title>
+        <meta name="description" content="Portfolio of Nmesoma, a frontend developer passionate about clean design and performant web apps." />
+        <meta name="keywords" content="Nmesoma, frontend developer, React, portfolio, web developer,web developer in Nigeria" />
+        <meta name="author" content="Nmesoma Nnopu" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 md:mt-12
     px-6 py-12 font-sans">
       <motion.div
@@ -12,9 +22,9 @@ const Info = () => {
       >
         {/* Skills */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide md:p-4px">
+          <h1 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide md:p-4px">
             Skills
-          </h2>
+          </h1>
           <p className="text-lg md:text-xl font-medium text-gray-300 mb-1">
             <span className="text-indigo-300">Frameworks:</span> NEXTJS
           </p>
@@ -36,9 +46,9 @@ const Info = () => {
 
         {/* Experience */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
+          <h1 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
           Professional  Experience
-          </h2>
+          </h1>
           <p className="text-lg font-semibold text-white">
             Productsio, Rivers State, Nigeria
           </p>
@@ -93,9 +103,9 @@ const Info = () => {
 
         {/* Demo Projects */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
+          <h1 className="text-2xl md:text-3xl font-bold text-indigo-400 mb-2 tracking-wide">
              Projects
-          </h2>
+          </h1>
           <ul className="list-disc list-inside text-lg md:text-xl text-gray-300 space-y-2 ml-2">
             <li>
               Developed a real-time{" "}
@@ -151,6 +161,7 @@ const Info = () => {
         </div>
       </motion.div>
     </div>
+    </>
   );
 };
 

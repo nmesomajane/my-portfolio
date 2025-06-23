@@ -4,11 +4,20 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 import ProfilePic from "../assets/nmeso2.png";
 import { FaChevronDown } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
  
   return (
+    <>
+    <Helmet>
+        <title>Nmesoma Nnopu | Frontend Developer</title>
+        <meta name="description" content="Portfolio of Nmesoma, a frontend developer passionate about clean design and performant web apps." />
+        <meta name="keywords" content="Nmesoma, frontend developer, React, portfolio, web developer in Nigeria" />
+        <meta name="author" content="Nmesoma Nnopu" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div className="  bg-black w-full   px-2 md:px-16 flex flex-col-reverse md:flex-row items-center justify-end   h-screen text-white fixed  ">
       {/* Left Side - Typewriter Text */}
       <div className="md:w-1/2   md:space-y-6 text-center md:text-left flex  flex-col  bottom-5">
@@ -60,11 +69,12 @@ const Home = () => {
       >
         <img
           src={ProfilePic}
-          alt="Profile"
+          alt="Nmesoma"
           className="w-[250px]  md:w-[70%] h-auto object-cover rounded-full shadow-lg mix-blend-lighten"
         />
       </motion.div>
     </div>
+    </>
   );
 };
 

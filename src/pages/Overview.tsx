@@ -2,8 +2,19 @@ import ProfilePic from "../assets/nmeso3.jpg";
 import pics from "../assets/pm.jpg"
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { Helmet } from "react-helmet";
+
 const Overview = () => {
+  
   return (
+    <>
+    <Helmet>
+        <title>Nmesoma Nnopu | Frontend Developer</title>
+        <meta name="description" content="Portfolio of Nmesoma, a frontend developer passionate about clean design and performant web apps." />
+        <meta name="keywords" content="Nmesoma, frontend developer, React, portfolio, web developer in Nigeria" />
+        <meta name="author" content="Nmesoma Nnopu" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div className="w-full px-4 md:px-8 py-1 font-sans bg-gray-50">
       <div className="flex flex-col-reverse md:flex-row justify-end m-4 md:m-12 gap-x-4 md:gap-x-12  ">
         <motion.div
@@ -65,7 +76,7 @@ const Overview = () => {
           <div className=" inset-0 rounded-full   ">
             <img
               src={ProfilePic}
-              alt="profile pics"
+              alt="Nmesoma"
               className="relative bg-black w-full h-full object-cover rounded-full border-4 border-black"
             />
           </div>
@@ -124,6 +135,7 @@ const Overview = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
