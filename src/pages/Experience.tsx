@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import ProfilePic from "../assets/nmeso3.jpg";
+import pics from "../assets/pm.jpg"
 
 
-const Info = () => {
+const Experience = () => {
   return (
     <>
     <Helmet>
@@ -16,7 +18,8 @@ const Info = () => {
     px-6 py-12 font-sans">
       <motion.div
         className="w-full space-y-12"
-        initial={{ x: -100, opacity: 0 }}
+        initial={{ x: -100, opacity: 0}}
+       
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
@@ -30,7 +33,7 @@ const Info = () => {
           </p>
           <p className="text-lg md:text-xl font-medium text-gray-300">
             <span className="text-indigo-300">Proficient:</span> React.js ,
-            Typescript, Javascript, Tailwind css, Node.js
+            Typescript, Javascript, Tailwind css, Node.js(Beginner)
           </p>
         </div>
 
@@ -40,7 +43,7 @@ const Info = () => {
             Tools
           </h2>
           <p className="text-lg md:text-xl font-medium text-gray-300">
-            Wordpress, Webflow, Figma, Firebase, Github, Canva
+            Wordpress, Webflow, Git, Github, Firebase, Canva, Figma
           </p>
         </div>
 
@@ -159,10 +162,62 @@ const Info = () => {
             </li>
           </ul>
         </div>
+
+        <div className="px-4 md:px-8 py-10">
+        <div className="mb-8 text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-indigo-800">
+           Testimonials
+          </h1>
+        </div>
+
+        <div className="flex mt-8 mb-10  flex-col md:flex-row gap-6">
+          {/* Testimonial 1 */}
+          <div className="bg-black border-4 border-black shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
+            <p className="text-white-700 text-base md:text-lg mb-4 leading-relaxed">
+              Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills. <br /><br /> Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.
+            </p>
+            <div className="flex items-center gap-3 mt-4">
+              <img
+                src={pics}
+                alt="Profile"
+                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
+              />
+              <p className="text-base font-bold text-black">
+                Jennifer Oro-Oghene <br />
+                <span className="text-sm text-gray-600 font-medium">
+                  Project Manager
+                </span>
+              </p>
+            </div>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="bg-white border-4 border-white shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
+            <p className="text-gray-700 text-base md:text-lg mb-4 leading-relaxed">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus deleniti numquam repellendus facilis cupiditate
+              laudantium dolorem iusto eos molestiae!
+            </p>
+            <div className="flex items-center gap-3 mt-4">
+              <img
+                src={ProfilePic}
+                alt="Profile"
+                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
+              />
+              <p className="text-base font-bold text-black">
+                Bright Lazarus <br />
+                <span className="text-sm text-gray-600 font-medium">
+                  Fullstack Developer
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       </motion.div>
     </div>
     </>
   );
 };
 
-export default Info;
+export default Experience;

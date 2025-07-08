@@ -1,7 +1,7 @@
 import { RouteObject, useRoutes,Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Overview from "../pages/Overview";
-import Info from "../pages/Info";
+import Experience from "../pages/Experience";
 import ScrollToTop from "../components/ScrollToTop";
 import { SharedLayout } from "../components/layout/SharedLayout";
 
@@ -27,8 +27,8 @@ export function AppRoutes() {
           element: <Overview /> 
         },
         { 
-          path: "info", 
-          element: <Info /> 
+          path: "experience", 
+          element: <Experience /> 
         },
       ],
     },

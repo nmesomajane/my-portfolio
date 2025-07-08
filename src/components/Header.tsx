@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const navigation = [
   { label: "Home", href: "/home" },
   { label: "Overview", href: "/overview" },
-  { label: "Info", href: "/info" },
+  { label: "Experience", href: "/experience" },
   { label: "Contact Me", href: "#footer" },
 ];
 
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="bg-black w-full fixed top-0 left-0 z-50 shadow">
       <div className="flex justify-between items-center p-1 text-lg text-white w-full  ">
-        <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl ">
+        <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl hover:text-indigo-800   ">
           {/* Desktop Nav */}
           <div className="hidden md:flex md:gap-[40px]">
             {navigation.map((nav, index) =>
