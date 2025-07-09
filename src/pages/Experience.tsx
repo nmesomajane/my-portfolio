@@ -163,57 +163,67 @@ const Experience = () => {
           </ul>
         </div>
 
-        <div className="px-4 md:px-8 py-10">
-        <div className="mb-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-indigo-800">
-           Testimonials
-          </h1>
-        </div>
-
-        <div className="flex mt-8 mb-10  flex-col md:flex-row gap-6">
-          {/* Testimonial 1 */}
-          <div className="bg-black border-4 border-black shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
-            <p className="text-white-700 text-base md:text-lg mb-4 leading-relaxed">
-              Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills. <br /><br /> Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.
-            </p>
-            <div className="flex items-center gap-3 mt-4">
-              <img
-                src={pics}
-                alt="Profile"
-                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
-              />
-              <p className="text-base font-bold text-black">
-                Jennifer Oro-Oghene <br />
-                <span className="text-sm text-gray-600 font-medium">
-                  Project Manager
-                </span>
-              </p>
-            </div>
-          </div>
-
-          {/* Testimonial 2 */}
-          <div className="bg-white border-4 border-white shadow-md p-6 flex-1 transition-transform duration-300 hover:-translate-y-2   rounded-[20px] hover:rounded-[32px]">
-            <p className="text-gray-700 text-base md:text-lg mb-4 leading-relaxed">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus deleniti numquam repellendus facilis cupiditate
-              laudantium dolorem iusto eos molestiae!
-            </p>
-            <div className="flex items-center gap-3 mt-4">
-              <img
-                src={ProfilePic}
-                alt="Profile"
-                className="w-14 h-14 rounded-full border-4 border-white  object-cover transition duration-300"
-              />
-              <p className="text-base font-bold text-black">
-                Bright Lazarus <br />
-                <span className="text-sm text-gray-600 font-medium">
-                  Fullstack Developer
-                </span>
-              </p>
-            </div>
-          </div>
+       <div className="px-4 md:px-8 py-10">
+  <div className="mb-8 text-center">
+    <h1 className="text-2xl md:text-3xl font-bold text-indigo-400 tracking-wide">
+      Testimonials
+    </h1>
+    <p className="text-gray-400 text-base md:text-lg mt-2">
+      What people say about working with me
+    </p>
+  </div>
+  <div className="flex flex-col md:flex-row gap-8 md:gap-10 justify-center items-stretch">
+    {/* Testimonial 1 */}
+    <motion.div
+      className="bg-gradient-to-br from-black via-gray-900 to-indigo-950 border-0 shadow-xl p-8 flex-1 rounded-3xl flex flex-col justify-between hover:scale-105 transition-transform duration-300"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.1 }}
+    >
+      <p className="text-gray-200 text-base md:text-lg mb-6 leading-relaxed italic">
+        “Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills.
+        <br /><br />
+        Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.”
+      </p>
+      <div className="flex items-center gap-4 mt-4">
+        <img
+          src={pics}
+          alt="Profile"
+          className="w-16 h-16 rounded-full border-4 border-indigo-400 object-cover shadow"
+        />
+        <div>
+          <p className="text-lg font-bold text-indigo-200">Jennifer Oro-Oghene</p>
+          <span className="text-sm text-gray-400 font-medium">Project Manager</span>
         </div>
       </div>
+    </motion.div>
+
+    {/* Testimonial 2 */}
+    <motion.div
+      className="bg-gradient-to-br from-black via-gray-900 to-indigo-950 border-0 shadow-xl p-8 flex-1 rounded-3xl flex flex-col justify-between hover:scale-105 transition-transform duration-300"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.2 }}
+    >
+      <p className="text-gray-200 text-base md:text-lg mb-6 leading-relaxed italic">
+        “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti numquam repellendus facilis cupiditate laudantium dolorem iusto eos molestiae!”
+      </p>
+      <div className="flex items-center gap-4 mt-4">
+        <img
+          src={ProfilePic}
+          alt="Profile"
+          className="w-16 h-16 rounded-full border-4 border-indigo-400 object-cover shadow"
+        />
+        <div>
+          <p className="text-lg font-bold text-indigo-200">Bright Lazarus</p>
+          <span className="text-sm text-gray-400 font-medium">Fullstack Developer</span>
+        </div>
+      </div>
+    </motion.div>
+  </div>
+</div>
       </motion.div>
     </div>
     </>

@@ -52,13 +52,13 @@ const Header = () => {
           <a
             href="/resume.pdf"
             download
-            className="hidden md:inline-block ml-4 bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded md:mr-5"
+            className=" md:inline-block md:ml-4 bg-indigo-500 text-white text-base px-4 py-1 md:py-2 shadow hover:bg-indigo-200 hover:text-white active:text-white active:bg-indigo-200  md:text-center rounded md:mr-5 bg-gradient-to-br from-white via-gray-900 to-indigo-950 border-0  justify-between hover:scale-105 transition-transform duration-300"
           >
             Download CV
           </a>
           {/* Hamburger Icon */}
           <button
-            className="md:hidden text-white text-3xl focus:outline-none"
+            className="md:hidden text-white text-3xl focus:outline-none order-1 "
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -102,14 +102,14 @@ const Header = () => {
                 </NavLink>
               )
             )}
-            <a
+            {/* <a
               href="/resume.pdf"
               download
               className="bg-indigo-500 text-white text-base px-4 py-2 shadow hover:bg-indigo-200 hover:text-black transition-colors text-center rounded"
               onClick={() => setMenuOpen(false)}
             >
               Download CV
-            </a>
+            </a> */}
           </motion.div>
         )}
       </div>

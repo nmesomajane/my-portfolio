@@ -94,7 +94,7 @@ const Overview = () => {
             </div>
           </div>
         </div>
-
+        
         <div className="px-4 md:px-8 py-10 mb-10">
           <div className="mb-8 text-center">
             <h1 className="text-2xl md:text-3xl font-bold text-indigo-800">
@@ -103,13 +103,12 @@ const Overview = () => {
           </div>
           <div className=" flex flex-col md:flex-row gap-6 ">
             {/* Project Card */}
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl flex flex-col items-left">
-              <div className="w-full aspect-video overflow-hidden rounded-xl mb-4 group">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl flex flex-col items-left">
+              <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo1}
                   alt="Chat App"
-                  className="w-full h-full object-cover transition duration-500 ease-in-out transform active:scale-95 md:group-hover:scale-110 md:group-hover:brightness-110 md:group-hover:shadow-xl
-                  "
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <h2 className="text-lg font-bold text-indigo-700 mb-2">
@@ -130,13 +129,13 @@ const Overview = () => {
                 href="https://github.com/nmesomajane/Quick-chat.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline font-semibold "
+                className="text-indigo-500 hover:underline active:underline font-semibold "
               >
                 View on github
               </a>
             </div>
 
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl flex flex-col items-left">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl active:shawdow-2xl active:rounded-2xl  flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo2}
@@ -162,7 +161,7 @@ const Overview = () => {
                 href="https://github.com/nmesomajane/Quick-chat.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline font-semibold"
+                className="text-indigo-500 hover:underline active:underline font-semibold"
               >
                 View on github
               </a>
@@ -174,7 +173,7 @@ const Overview = () => {
 
           <div className=" flex flex-col md:flex-row gap-6">
             {/* Project Card */}
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl flex flex-col items-left ">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl  flex flex-col items-left ">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo3}
@@ -199,13 +198,13 @@ const Overview = () => {
                 href="https://github.com/nmesomajane/expense-tracker.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline font-semibold"
+                className="text-indigo-500 hover:underline active:underline font-semibold"
               >
                 View on github
               </a>
             </div>
 
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl flex flex-col items-left">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl  flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo4}
@@ -230,7 +229,7 @@ const Overview = () => {
                 href="https://tefem-hazel.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline font-semibold"
+                className="text-indigo-500 hover:underline font-semibold active:underline"
               >
                 View Card
               </a>
@@ -239,6 +238,15 @@ const Overview = () => {
             {/* Repeat for other projects */}
             {/* ... */}
           </div>
+          <div className="flex justify-center md:text-left
+          my-8">
+  <a
+    href="/experience"
+    className="bg-indigo-600 md:hidden text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition text-lg font-semibold"
+  >
+    View Experience
+  </a>
+</div>
         </div>
         
       </div>
