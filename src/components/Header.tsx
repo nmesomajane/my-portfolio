@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="bg-black w-full fixed top-0 left-0 z-50 shadow">
       <div className="flex justify-between items-center p-1 text-lg text-white w-full  ">
-        <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl hover:text-indigo-800   ">
+        <nav className="w-full flex justify-between items-center bg-black p-4 text-4xl hover:text-indigo-800 italic ">
           {/* Desktop Nav */}
           <div className="hidden md:flex md:gap-[40px]">
             {navigation.map((nav, index) =>
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
           {/* Download CV Button (always visible on desktop, below on mobile) */}
           <a
-            href="/resume.pdf"
+            href="/Resume3.pdf"
             download
             className=" md:inline-block md:ml-4 bg-indigo-500 text-white text-base px-4 py-1 md:py-2 shadow hover:bg-indigo-200 hover:text-white active:text-white active:bg-indigo-200  md:text-center rounded md:mr-5 bg-gradient-to-br from-white via-gray-900 to-indigo-950 border-0  justify-between hover:scale-105 transition-transform duration-300"
           >

@@ -15,7 +15,7 @@ const Experience = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
     <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 md:mt-12
-    px-6 py-12 font-sans">
+    px-6 py-12 leading-relaxed italic">
       <motion.div
         className="w-full space-y-12"
         initial={{ x: -100, opacity: 0}}
@@ -182,9 +182,9 @@ const Experience = () => {
       transition={{ duration: 0.7, delay: 0.1 }}
     >
       <p className="text-gray-200 text-base md:text-lg mb-6 leading-relaxed italic">
-        “Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills.
+      Working with Nmesoma Nnopu on Kadan Kadan, our import/export shipping platform, has been an absolute pleasure. As the project manager, I’ve had the chance to closely observe her dedication, creativity, and problem-solving skills.
         <br /><br />
-        Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.”
+        Nmesoma brings not only strong technical expertise but also a thoughtful, human-centered approach to her work. She listens actively, communicates clearly, and consistently meets deadlines with professionalism and grace. Her attention to detail and ability to take initiative have made a real impact. I’d gladly recommend her to anyone in need of a dependable and gifted web developer.
       </p>
       <div className="flex items-center gap-4 mt-4">
         <img
@@ -208,7 +208,7 @@ const Experience = () => {
       transition={{ duration: 0.7, delay: 0.2 }}
     >
       <p className="text-gray-200 text-base md:text-lg mb-6 leading-relaxed italic">
-        “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti numquam repellendus facilis cupiditate laudantium dolorem iusto eos molestiae!”
+       Collaborating with Nmesoma has been an absolute pleasure. As a frontend developer, she brings creativity, attention to detail, and a strong sense of design to every project. Her ability to translate ideas into clean, responsive, and user-friendly interfaces is impressive. <br /> <br /> Working with her was seamless,she communicates clearly, meets deadlines, and is always open to feedback. Her passion for creating intuitive digital experiences really stands out. I’d gladly work with her again on future projects.”
       </p>
       <div className="flex items-center gap-4 mt-4">
         <img

@@ -7,6 +7,7 @@ import demo1 from "../assets/chat.png";
 import demo2 from "../assets/movie.png";
 import demo3 from "../assets/expense.png";
 import demo4 from "../assets/food.png";
+import { Link } from "react-router-dom";
 
 
 const Overview = () => {
@@ -36,7 +37,7 @@ const Overview = () => {
             <h1 className="text-2xl md:text-3xl font-sans font-extrabold text-indigo-800 mb-4 pt-12  mt-2 ">
               About Me
             </h1>
-            <p className="text-base md:text-md text-gray-700  mt-2">
+            <p className="text-base md:text-md text-gray-700  mt-2 leading-relaxed italic">
               I’m a Freelance web developer with over a year of hands-on
               experience building responsive and engaging user interfaces. My
               journey into tech began with a strong curiosity and a desire to
@@ -101,9 +102,9 @@ const Overview = () => {
               Projects
             </h1>
           </div>
-          <div className=" flex flex-col md:flex-row gap-6 ">
+          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed italic">
             {/* Project Card */}
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl flex flex-col items-left">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo1}
@@ -135,7 +136,7 @@ const Overview = () => {
               </a>
             </div>
 
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl active:shawdow-2xl active:rounded-2xl  flex flex-col items-left">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl  flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo2}
@@ -171,9 +172,9 @@ const Overview = () => {
             {/* ... */}
           </div>
 
-          <div className=" flex flex-col md:flex-row gap-6">
+          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed italic">
             {/* Project Card */}
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl  flex flex-col items-left ">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl flex flex-col items-left ">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo3}
@@ -204,7 +205,7 @@ const Overview = () => {
               </a>
             </div>
 
-            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:shawdow-2xl active:rounded-xl  flex flex-col items-left">
+            <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl  flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
                 <img
                   src={demo4}
@@ -238,14 +239,13 @@ const Overview = () => {
             {/* Repeat for other projects */}
             {/* ... */}
           </div>
-          <div className="flex justify-center md:text-left
-          my-8">
-  <a
-    href="/experience"
+          <div className="flex justify-center md:text-left my-8">
+  <Link
+    to="/experience"
     className="bg-indigo-600 md:hidden text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition text-lg font-semibold"
   >
     View Experience
-  </a>
+  </Link>
 </div>
         </div>
         
