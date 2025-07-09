@@ -104,11 +104,12 @@ const Overview = () => {
           <div className=" flex flex-col md:flex-row gap-6 ">
             {/* Project Card */}
             <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-xl hover:rounded-xl flex flex-col items-left">
-              <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
+              <div className="w-full aspect-video overflow-hidden rounded-xl mb-4 group">
                 <img
                   src={demo1}
                   alt="Chat App"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover transition duration-500 ease-in-out transform active:scale-95 md:group-hover:scale-110 md:group-hover:brightness-110 md:group-hover:shadow-xl
+                  "
                 />
               </div>
               <h2 className="text-lg font-bold text-indigo-700 mb-2">
