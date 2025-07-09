@@ -1,5 +1,5 @@
 import ProfilePic from "../assets/nmeso3.jpg";
-import pics from "../assets/pm.jpg";
+
 import { motion } from "framer-motion";
 import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -7,9 +7,7 @@ import demo1 from "../assets/chat.png";
 import demo2 from "../assets/movie.png";
 import demo3 from "../assets/expense.png";
 import demo4 from "../assets/food.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-// @ts-ignore
-import "swiper/css";
+
 
 const Overview = () => {
   return (
