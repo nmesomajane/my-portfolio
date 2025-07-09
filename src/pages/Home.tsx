@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
     <Helmet>
-        <title>Nmesoma Nnopu | Frontend Developer</title>
+        <title>Nmesoma Nnopu - Frontend Developer</title>
         <meta name="description" content="Portfolio of Nmesoma, a frontend developer passionate about clean design and performant web apps." />
         <meta name="keywords" content="Nmesoma, frontend developer, React, portfolio, web developer in Nigeria" />
         <meta name="author" content="Nmesoma Nnopu" />

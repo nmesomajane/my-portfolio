@@ -208,7 +208,7 @@ const Experience = () => {
       transition={{ duration: 0.7, delay: 0.2 }}
     >
       <p className="text-gray-200 text-base md:text-lg mb-6 leading-relaxed italic">
-       Collaborating with Nmesoma has been an absolute pleasure. As a frontend developer, she brings creativity, attention to detail, and a strong sense of design to every project. Her ability to translate ideas into clean, responsive, and user-friendly interfaces is impressive. <br /> <br /> Working with her was seamless,she communicates clearly, meets deadlines, and is always open to feedback. Her passion for creating intuitive digital experiences really stands out. I’d gladly work with her again on future projects.”
+       Collaborating with Nmesoma has been an absolute pleasure. As a frontend developer, she brings creativity, attention to detail, and a strong sense of design to every project. Her ability to translate ideas into clean, responsive, and user-friendly interfaces is impressive. <br /> <br /> Working with her was seamless,she communicates clearly, meets deadlines, and is always open to feedback. Her passion for creating intuitive digital experiences really stands out. I’d gladly work with her again on future projects.
       </p>
       <div className="flex items-center gap-4 mt-4">
         <img
