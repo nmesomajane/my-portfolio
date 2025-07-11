@@ -37,7 +37,7 @@ const Overview = () => {
             <h1 className="text-2xl md:text-3xl font-sans font-extrabold text-indigo-800 mb-4 pt-12  mt-2 ">
               About Me
             </h1>
-            <p className="text-base md:text-md text-gray-700  mt-2 leading-relaxed italic">
+            <p className="font-sans text-base md:text-md text-gray-700  mt-2 leading-relaxed ">
               I’m a Freelance web developer with over a year of hands-on
               experience building responsive and engaging user interfaces. My
               journey into tech began with a strong curiosity and a desire to
@@ -53,7 +53,7 @@ const Overview = () => {
               continuously strive to grow both personally and professionally.
               Whether it’s bringing a UI design to life or debugging a tough
               issue, I’m always up for the challenge. <br />
-              <span className="font-semibold text-indigo-700">
+              <span className="font-semibold text-indigo-700  italic">
                 Let’s build something amazing, shall we?
               </span>
             </p>
@@ -102,7 +102,7 @@ const Overview = () => {
               Projects
             </h1>
           </div>
-          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed italic">
+          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed font-sans">
             {/* Project Card */}
             <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl flex flex-col items-left">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
@@ -144,7 +144,7 @@ const Overview = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h2 className="text-lg font-bold text-indigo-700 mb-2">
+              <h2 className="text-lg font-bold text-indigo-700 mb-2 font-sans">
                 Movie App
               </h2>
               <p className="text-gray-600 text-base md:text-md mb-4 text-left">
@@ -162,7 +162,7 @@ const Overview = () => {
                 href="https://github.com/nmesomajane/Quick-chat.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline active:underline font-semibold"
+                className="text-indigo-500 hover:underline active:underline font-semibold italic"
               >
                 View on github
               </a>
@@ -172,7 +172,7 @@ const Overview = () => {
             {/* ... */}
           </div>
 
-          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed italic">
+          <div className=" flex flex-col md:flex-row gap-6 leading-relaxed font-sans">
             {/* Project Card */}
             <div className="pl-5 pr-5 pb-5 hover:border-indigo-400 hover:shadow-2xl hover:rounded-xl active:border-indigo-400 active:shadow-2xl active:rounded-xl flex flex-col items-left ">
               <div className="w-full aspect-video overflow-hidden rounded-xl mb-4">
@@ -185,7 +185,7 @@ const Overview = () => {
               <h2 className="text-lg font-bold text-indigo-700 mb-2">
                 Finace App
               </h2>
-              <p className="text-gray-600 text-base md:text-md mb-4 text-left">
+              <p className="text-gray-600 text-base md:text-md mb-4 text-left font-sans">
                 Expense Tracker Designed and developed a user-friendly expense
                 tracking web application to help users monitor and manage their
                 finances effectively. <br /> Built with React.js, TypeScript, and
@@ -199,7 +199,7 @@ const Overview = () => {
                 href="https://github.com/nmesomajane/expense-tracker.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline active:underline font-semibold"
+                className="text-indigo-500 hover:underline active:underline font-semibold italic"
               >
                 View on github
               </a>
@@ -216,7 +216,7 @@ const Overview = () => {
               <h2 className="text-lg font-bold text-indigo-700 mb-2">
                 Perfume Card
               </h2>
-              <p className="text-gray-600 text-base md:text-md mb-4 text-left">
+              <p className="text-gray-600 text-base md:text-md mb-4 text-left font-sans">
                 Built a clean and elegant product card component for
                 showcasing a perfume product on an e-commerce platform. Built
                 with HTML, CSS, and Tailwind CSS, focusing on minimalism and
@@ -230,7 +230,7 @@ const Overview = () => {
                 href="https://tefem-hazel.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline font-semibold active:underline"
+                className="text-indigo-500 hover:underline font-semibold active:underline italic"
               >
                 View Card
               </a>

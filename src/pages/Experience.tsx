@@ -15,7 +15,7 @@ const Experience = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
     <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 md:mt-12
-    px-6 py-12 leading-relaxed italic">
+    px-6 py-12 leading-relaxed font-sans">
       <motion.div
         className="w-full space-y-12"
         initial={{ x: -100, opacity: 0}}
@@ -217,7 +217,7 @@ const Experience = () => {
           className="w-16 h-16 rounded-full border-4 border-indigo-400 object-cover shadow"
         />
         <div>
-          <p className="text-lg font-bold text-indigo-200">Bright Lazarus</p>
+          <p className="text-lg font-bold text-indigo-200">Mark Donalson</p>
           <span className="text-sm text-gray-400 font-medium">Fullstack Developer</span>
         </div>
       </div>

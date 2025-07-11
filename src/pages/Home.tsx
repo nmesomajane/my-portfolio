@@ -34,7 +34,7 @@ const Home = () => {
                 )
                 .pauseFor(1000)
                 .typeString(
-                  '<br><span class="text-indigo-300 text-xl md:text-2xl font-semibold font-mono">A FRONT-END WEB DEVELOPER</span>'
+                  '<br><span class="text-indigo-300 text-xl md:text-2xl font-semibold font-mono">A FRONT-END WEB DEVELOPER. </span>'
                 )
                 .start();
             }}
