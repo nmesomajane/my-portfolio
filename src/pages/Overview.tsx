@@ -21,7 +21,7 @@ const Overview = () => {
         />
         <meta
           name="keywords"
-          content="Nmesoma, frontend developer, React, portfolio, web developer in Nigeria"
+          content="Nmesoma, frontend developer, React, portfolio, Genz, web developer in Nigeria"
         />
         <meta name="author" content="Nmesoma Nnopu" />
         <meta name="robots" content="index, follow" />

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import ProfilePic from "../assets/nmeso3.jpg";
+
+import ProfilePics from "../assets/Bright.jpg";
 import pics from "../assets/pm.jpg"
 
 
@@ -10,7 +11,7 @@ const Experience = () => {
     <Helmet>
         <title>Nmesoma Nnopu | Frontend Developer</title>
         <meta name="description" content="Portfolio of Nmesoma, a frontend developer passionate about clean design and performant web apps." />
-        <meta name="keywords" content="Nmesoma, frontend developer, React, portfolio, web developer,web developer in Nigeria" />
+        <meta name="keywords" content="Nmesoma Nnopu, frontend developer, React, portfolio, web developer, Genz, web developer in Nigeria" />
         <meta name="author" content="Nmesoma Nnopu" />
         <meta name="robots" content="index, follow" />
       </Helmet>
@@ -212,12 +213,12 @@ const Experience = () => {
       </p>
       <div className="flex items-center gap-4 mt-4">
         <img
-          src={ProfilePic}
+          src={ProfilePics}
           alt="Profile"
           className="w-16 h-16 rounded-full border-4 border-indigo-400 object-cover shadow"
         />
         <div>
-          <p className="text-lg font-bold text-indigo-200">Mark Donalson</p>
+          <p className="text-lg font-bold text-indigo-200">Bright Lazarus</p>
           <span className="text-sm text-gray-400 font-medium">Fullstack Developer</span>
         </div>
       </div>
