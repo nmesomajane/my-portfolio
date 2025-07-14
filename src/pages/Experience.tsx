@@ -62,12 +62,12 @@ const Experience = () => {
           <div className="text-gray-300 text-base md:text-lg space-y-2">
             <p>
               <span className="font-semibold text-indigo-300">Role:</span>{" "}
-              Frontend Developer (Intern)
+              Frontend Developer
               <br />
               <span className="font-semibold text-indigo-300">
                 Duration:
               </span>{" "}
-              April 2025 – Present
+              April 2025 – June 2025
             </p>
             <ul className="list-disc list-inside ml-2 gap-10">
               <li>
