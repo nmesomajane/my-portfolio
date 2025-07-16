@@ -1,18 +1,18 @@
 import ProfilePic from "../assets/nmeso3.jpg";
 
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaGithub, FaTwitter,FaArrowLeft } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaTwitter,} from "react-icons/fa";
 import { Helmet } from "react-helmet";
 import demo1 from "../assets/chat.png";
 import demo2 from "../assets/movie.png";
 import demo3 from "../assets/expense.png";
 import demo4 from "../assets/food.png";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 const Overview = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -30,7 +30,7 @@ const Overview = () => {
       </Helmet>
       
       <div className="w-full px-4 md:px-8 py-1 font-sans bg-gray-50">
-         <button
+         {/* <button
                       type="button"
                       onClick={() => {
                        
@@ -40,7 +40,7 @@ const Overview = () => {
                       className="absolute left-2 mt-[80px] py-2 cursor-pointer lg:hidden "
                     >
                       <FaArrowLeft className="text-black"/>
-                    </button>
+                    </button> */}
         <div className="flex flex-col-reverse md:flex-row justify-end m-4 md:m-12 gap-x-4 md:gap-x-12  ">
           <motion.div
             className="md:w-1/2  space-y-6 md:space-y-8 text-left flex flex-col bottom-5"

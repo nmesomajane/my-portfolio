@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet";
 
 import ProfilePics from "../assets/Bright.jpg";
 import pics from "../assets/pm.jpg"
-import {useNavigate  } from "react-router-dom";
+// import {useNavigate  } from "react-router-dom";
 
-import {FaArrowLeft } from "react-icons/fa";
+// import {FaArrowLeft } from "react-icons/fa";
 
 const Experience = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
     <Helmet>
@@ -21,7 +21,7 @@ const Experience = () => {
      
     <div className="min-h-screen bg-black text-gray-200 pt-20 md:px-10 md:mt-12 
     px-6 py-12 leading-relaxed font-sans">
-       <div>
+       {/* <div>
          <button
           type="button"
           onClick={() => {
@@ -33,9 +33,9 @@ const Experience = () => {
         >
           <FaArrowLeft/>
         </button>
-      </div>
+      </div> */}
       <motion.div
-        className="w-full pl-[10px]  space-y-12"
+        className="w-full  space-y-12"
         initial={{ x: -100, opacity: 0}}
        
         animate={{ x: 0, opacity: 1 }}
